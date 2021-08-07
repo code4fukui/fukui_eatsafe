@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>福井 水ようかんマップ - 2011</title>
+<meta name="description" content="もうひとつの福井の冬の味覚「水ようかん」冬限定で福井県内各地で売られる水ようかんをマップにしてみました。2011年版">
+<style>
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0px 10px 0px;
+	color: #DC7343;
+}
+#input {
+	display: none; /* inline-block */
+}
+#output {
+	display: none; /* inline-block */
+}
+#map-canvas {
+	height: 500px;
+}
+#footer {
+	font-size: 70%;
+}
+</style>
+</head>
+<body onload="kcmap.load()">
+
+<h1>ふくい安心飲食店マップ</h1>
+
+<script type="module" src="https://code4fukui.github.io/csv-map/csv-map.js"></script>
+<csv-map src=fukui_eatsafe.csv color=orange></csv-map>
+
+<script type="module" src="https://code4sabae.github.io/js/csv-viewer.js"></script>
+<csv-viewer name="ふくい安全・安心飲食店 認証店一覧" src=./fukui_eatsafe.csv></csv-viewer>
+
+<hr>
+<div id='footer'>
+Data: <a href=https://fukui-anshin-ninsyou.com/certified.html>ふくい安全・安心飲食店認証制度 認証店一覧</a><br>
+App: CC BY <a href=https://code4fukui.github.io/>Code for FUKUI</a> <a href=https://fukuno.jig.jp/3299>福野泰介</a> <a href=https://github.com/code4fukui/fukui-eatsafe/>src on GitHub</a><br>
+</div>
+</body>
+</html>
