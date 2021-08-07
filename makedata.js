@@ -8,7 +8,7 @@ const make = async () => {
   for (const d of data) {
     const addr = d.住所;
     const ll = geomap.find(g => g.address == d.住所);
-    const geo3x3 = Geo3x3.encode(ll.lat, ll.lng, 20);
+    const geo3x3 = Geo3x3.encode(ll.lat, ll.lng, 14);
     console.log(geo3x3);
     d.geo3x3 = geo3x3 || d.townid;
   }
