@@ -14,6 +14,7 @@ const make = async () => {
   }
   data.sort((a, b) => parseInt(a.認証番号) - parseInt(b.認証番号));
   await Deno.writeTextFile("fukui_eatsafe.csv", CSV.encode(CSV.fromJSON(data)));
+  console.log(data.length);
 };
 
 await make();
