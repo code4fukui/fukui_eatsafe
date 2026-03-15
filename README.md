@@ -1,5 +1,7 @@
 # fukui_eatsafe
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 This project maps the list of certified "Fukui Safe and Secure Restaurants" with their latitude and longitude.
 
 ## Demo
