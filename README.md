@@ -1,8 +1,19 @@
 # fukui_eatsafe
- 
-[ふくい安全・安心飲食店認証制度 認証店一覧](https://fukui-anshin-ninsyou.com/certified.html)に緯度経度を足したCSVデータにして、マップにしました
 
-## how to make
+This project maps the list of certified "Fukui Safe and Secure Restaurants" with their latitude and longitude.
+
+## Demo
+[Fukui Safe and Secure Restaurant Map](https://code4fukui.github.io/fukui_eatsafe/)
+
+## Features
+- Provides a map view of certified restaurants in Fukui prefecture, Japan
+- Includes a CSV viewer to browse the list of certified restaurants
+
+## Requirements
+- [Deno](https://deno.land/) runtime environment
+
+## Usage
+To generate the final data:
 
 ```
 # download html
@@ -17,6 +28,10 @@ deno run -A geocode.js
 deno run -A makedata.js
 ```
 
-## map
+This will generate the `fukui_eatsafe.csv` file which can be used to display the map.
 
-[ふくい安心飲食店マップ](https://code4fukui.github.io/fukui_eatsafe/)
+## Data / API
+The data is sourced from the [Fukui Safe and Secure Restaurant Certification System](https://fukui-anshin-ninsyou.com/certified.html) website.
+
+## License
+This project is licensed under the MIT License.
