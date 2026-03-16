@@ -36,4 +36,4 @@ This will generate the `fukui_eatsafe.csv` file which can be used to display the
 The data is sourced from the [Fukui Safe and Secure Restaurant Certification System](https://fukui-anshin-ninsyou.com/certified.html) website.
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).
